@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies</title>
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <style>
+        .row{
+            flex-wrap: wrap;
+            display: flex;
+            padding: 20px;
+        }
+        .row .movie img{
+            display: table;
+            margin: 0 auto 15px;
+        }
+        .title{
+            text-align: center;
+            font-size: 14px;
+        }
+        .row .movie{
+            cursor: pointer;
+            text-align: center;
+            padding: 20px 35px;
+            flex: 0 0 20%;
+            transition: all .4s linear;
+        }
+        .row .movie:hover{
+            box-shadow: 0 0 6px 0 rgba(0,0,0,0.4);
+        }
+    </style> -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn sortByName">sortByName</a></li>
+                <li><a class="waves-effect waves-light btn"> <i class="material-icons right"></i></a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav>
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+<div class="container">
+    <label>
+                    <span>from</span>
+                    <!-- <input class="input-field col s6 year-from" type="text"> -->
+                    <input class="year-from" type="text">
+                </label>
+
+
+    <label>
+                    <span>To</span>
+                    <input class="year-to" type="text">
+                </label>
+
+    <a class="waves-effect waves-light btn filterByYear">Filter</a>
+
+</div>
+    <div class="row list-movies"> </div>
+
+
+
+
+    <script src="node_modules\axios\dist\axios.min.js">
+
+    </script>
+
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
