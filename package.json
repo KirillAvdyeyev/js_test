@@ -12,7 +12,12 @@
     "axios": "^0.17.1",
     "materialize-css": "^0.100.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KirillAvdyeyev/js_test.git"

@@ -26,7 +26,7 @@
 //   console.log(error);
 // });
 
-// // 
+// // https://javarush.ru/groups/posts/230-chto-delajut-ux-i-ui-dizaynerih-a-chto--frontendjshiki
 
 const tempData = {
 	"data": {
