@@ -933,7 +933,27 @@ var _main2 = _interopRequireDefault(_main);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _main2.default)();
+var newBtn = document.querySelector('#go-to-new');
+newBtn.addEventListener('click', changeHash);
+
+function changeHash() {
+    window.location.hash = "#new";
+    loadData();
+}
+
+function loadData() {
+    if (window.location.hash === '') {
+        window.location.hash = "#main";
+    }
+    if (window.location.hash === "#main") {
+        (0, _main2.default)();
+    } else if (window.location.hash === "#new") {
+        // body.innerHTML = "";
+        alert("the new");
+    }
+}
+
+loadData();
 
 /***/ }),
 /* 9 */
