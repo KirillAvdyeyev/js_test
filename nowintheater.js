@@ -8,8 +8,6 @@ sortByNameBtn.addEventListener('click', sortByName);
 let search = document.querySelector('#search');
 search.addEventListener('keyup', searchByName);
 
-
-
 function searchByName() {
 
     listMovies.innerHTML = '';
@@ -29,7 +27,6 @@ function sortByName() {
     });
     renderList(tempArray);
 }
-
 
 function renderMovie(film) {
     let html = `
