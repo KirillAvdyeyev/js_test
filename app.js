@@ -1,4 +1,3 @@
-console.log("test");
-console.log("test");
-console.log("test");
-console.log("test");
+import MainJS from 'main';
+
+mainJS();

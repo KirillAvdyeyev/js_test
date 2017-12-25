@@ -28,6 +28,12 @@
 
 // // https://javarush.ru/groups/posts/230-chto-delajut-ux-i-ui-dizaynerih-a-chto--frontendjshiki
 
+function mainJS() {
+  
+
+
+
+
 const tempData = {
 	"data": {
 		"movies": [
@@ -194,3 +200,8 @@ function renderList(list) {
 }
 
 renderList(tempData.data.movies);
+
+
+}
+
+export default mainJS;
