@@ -2,9 +2,9 @@
 //   .then(function (response) {
 //     console.log(response);
 //   })
-  // .catch(function (error) {
-  //   console.log(error);
-  // });
+// .catch(function (error) {
+//   console.log(error);
+// });
 
 // 743c6d03-cb1d-4fc2-9265-7d7620e35287
 
@@ -22,11 +22,11 @@
 //   .then(function (response) {
 //     console.log(response);
 //   })
-  // .catch(function (error) {
-  //   console.log(error);
-  // });
+// .catch(function (error) {
+//   console.log(error);
+// });
 
-
+// 
 
 const tempData = {
 	"data": {
@@ -140,18 +140,18 @@ filterByYearBtn.addEventListener('click', filterByYear);
 let nowInTheatre = document.querySelector('.nowintheater');
 nowInTheatre.addEventListener('click', goToPage);
 
-function goToPage(){
+function goToPage() {
 	window.location = ('nowintheater.html');
 }
 
 
 function filterByYear() {
-    listMovies.innerHTML = '';
-    let tempArray = tempData.data.movies;
-    tempArray = tempArray.filter((film) => {
-        return film.year >= yearFrom.value && film.year <= yearTo.value;
-    });
-    renderList(tempArray);
+	listMovies.innerHTML = '';
+	let tempArray = tempData.data.movies;
+	tempArray = tempArray.filter((film) => {
+		return film.year >= yearFrom.value && film.year <= yearTo.value;
+	});
+	renderList(tempArray);
 
 
 }
@@ -159,38 +159,38 @@ function filterByYear() {
 
 function searchByName() {
 
-    listMovies.innerHTML = '';
-    let tempArray = tempData.data.movies;
-    tempArray = tempArray.filter((film) => {
-        return film.title.indexOf(this.value) === 0;
-    });
-    renderList(tempArray);
+	listMovies.innerHTML = '';
+	let tempArray = tempData.data.movies;
+	tempArray = tempArray.filter((film) => {
+		return film.title.indexOf(this.value) === 0;
+	});
+	renderList(tempArray);
 
 }
 
 function sortByName() {
-    listMovies.innerHTML = "";
-    let tempArray = tempData.data.movies;
-    tempArray.sort((a, b) => {
-        return a.title > b.title ? 1 : -1;
-    });
-    renderList(tempArray);
+	listMovies.innerHTML = "";
+	let tempArray = tempData.data.movies;
+	tempArray.sort((a, b) => {
+		return a.title > b.title ? 1 : -1;
+	});
+	renderList(tempArray);
 }
 
 
 function renderMovie(film) {
-    let html = `
+	let html = `
     <div class = "movie col s4">
     <img src = "${film.urlPoster}" alt = "poster">
     <h5>${film.title}</h5>
     <p>${film.year}</p>
     </div>
     `
-    listMovies.insertAdjacentHTML('beforeend', html);
+	listMovies.insertAdjacentHTML('beforeend', html);
 }
 
 function renderList(list) {
-    list.forEach((film) => { renderMovie(film) })
+	list.forEach((film) => { renderMovie(film) })
 }
 
 renderList(tempData.data.movies);

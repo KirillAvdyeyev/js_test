@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">Now in theater</a>
             <ul class="right hide-on-med-and-down">
-                <li><a class="waves-effect waves-light btn sortByName">sortByName</a></li>
+                <li>
+                    <a class="waves-effect waves-light btn sortByName">sortByName</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -23,7 +26,9 @@
             <form>
                 <div class="input-field">
                     <input id="search" type="search">
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons">search</i>
+                    </label>
                     <i class="material-icons">close</i>
                 </div>
             </form>
@@ -31,10 +36,6 @@
     </nav>
 
     <div class="row list-movies"> </div>
-
-
-
-
     <script src="node_modules\axios\dist\axios.min.js">
 
     </script>
