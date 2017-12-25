@@ -1,3 +1,6 @@
-import MainJS from 'main';
+import axios from 'axios';
+
+
+import mainJS from './main';
 
 mainJS();
